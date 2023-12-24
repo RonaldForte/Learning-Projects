@@ -1,0 +1,96 @@
+*{ /*CSS universal selectors*/
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url("Calculator-Background-image.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size:cover; /*could do cover but looks weird*/
+}
+
+.container{ /*This is shape of the calculator*/
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.calc{ /*This affects the color of the calculator*/
+    background: #000000;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.calc form input{ /*This changes the way the buttons and the "screen" looks*/
+    border: 0;
+    outline: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    box-shadow: -8px -8px 15px rgba(171, 133, 56, 0.842),5px 5px 15px rgba(102, 116, 99, 0.625);
+    background: transparent;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    margin: 10px;
+}
+
+form .display{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+}
+form .display input{
+    text-align: right;
+    flex: 1;
+    font-size: 45px;
+    box-shadow: none;
+}
+form input.equal{ 
+    width: 145px; /* size of equal (since it's bigger)*/
+}
+
+form input.operator{ /*color for all op buttons*/
+    color: #ffaa00;
+}
+
+.containerHeader {
+    margin-top: -35px;
+    display: flex;
+    position: fixed;
+    color: rgb(255, 145, 0);
+    width: 350px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 20px;
+    padding-left: 35px;
+}
+
+
+.containerHeader a { /* affects the x box*/
+    min-width: 30px;
+    position: absolute;
+    right: 10px;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    background: #ffa600;
+    border: 2px solid;
+    border-color: #F7F7F7 black black #F7F7F7;
+}
+
+
+
+
+
+
+
